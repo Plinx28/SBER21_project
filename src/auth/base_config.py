@@ -3,7 +3,7 @@ from fastapi_users import FastAPIUsers
 from fastapi_users.authentication import CookieTransport, JWTStrategy, AuthenticationBackend
 
 from src.config import SECRET_PHRASE
-from src.auth.models import User
+from src.models import User
 from src.auth.manager import get_user_manager
 
 COOKIE_TIME = 3600

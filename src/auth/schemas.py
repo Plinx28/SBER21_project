@@ -1,4 +1,4 @@
-from pydantic import EmailStr
+from pydantic import EmailStr, BaseModel
 from fastapi_users import schemas
 
 
@@ -16,3 +16,9 @@ class UserUpdate(schemas.BaseUserUpdate):
 
 class UserRead(UserBase):
     email: EmailStr
+
+
+class RoleCreate(BaseModel):
+    id: int
+    name: str
+    permissions: str

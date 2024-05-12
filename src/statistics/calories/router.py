@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from src.database import get_async_session
 
 from src.statistics.calories.schemas import CreateCalories
-from src.statistics.calories.models import Calories
+from src.models import Calories
 
 router = APIRouter(
     prefix="/calories",

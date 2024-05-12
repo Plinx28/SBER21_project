@@ -8,9 +8,10 @@ from alembic import context
 from src.database import Base
 from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
 
-from src.auth.models import *
-from src.statistics.calories.models import *
-from src.statistics.pressure.models import *
+# from src.auth.models import *
+# from src.statistics.calories.models import *
+# from src.statistics.pressure.models import *
+from src.models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
