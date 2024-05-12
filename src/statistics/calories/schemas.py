@@ -3,8 +3,9 @@ from pydantic import BaseModel
 
 class CaloriesBase(BaseModel):
     quantity: int
-    description: str
+    additional: str
+    user_id: int
 
 
 class CreateCalories(CaloriesBase):
-    owner: int
+    pass

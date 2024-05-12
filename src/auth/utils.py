@@ -11,3 +11,4 @@ from src.database import get_async_session
 
 def get_user_db(session: Session = Depends(get_async_session)):
     yield SQLAlchemyUserDatabase(session, User)
+
