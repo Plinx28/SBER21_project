@@ -1,0 +1,163 @@
+/* ------- Base block ------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #212529;
+}
+
+div, textarea, table, td, th, code, pre, samp {
+    word-wrap: break-word;
+}
+
+.container {
+    width: 90%;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+#operation_search {
+    border: 1px solid #212529;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#operation_search:active {
+    border-color: rgb(0, 151, 20);
+}
+
+#button {
+    border: 1px solid #212529;
+    border-radius: 12px;
+    padding: 5px 16px;
+    transition: 0.15s;
+    background-color: rgb(238, 238, 238);
+}
+
+#button:hover {
+    background-color: rgb(70, 255, 95);
+}
+
+#button:active {
+    background-color: rgb(170, 255, 182);
+}
+
+/* ------- Header block ------- */
+
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    min-height: 100px;
+    font-size: 24px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.header__nav ul{
+    display: flex;
+}
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    transition:  0.25s;
+}
+
+.header__nav a:hover {
+    transform: scale(1.25);
+    color: rgb(0, 151, 20);
+}
+
+.header__nav a:active {
+    color: rgb(0, 151, 20);
+}
+
+/* ------- Filter-input-panel ------- */
+
+.filter {
+    margin-top: 120px;
+}
+
+.filter__container {
+    text-align: center;
+}
+
+.filter__control {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.filter__control ul {
+    display: flex;
+    font-size: 20px;
+}
+
+.filter__control li + li {
+    margin-left: 30px;
+}
+
+
+/* ------- Content block ------- */
+
+.content {
+    min-height: 500px;
+    text-align: center;
+}
+
+.content__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.card {
+    text-align: left;
+    width: 300px;
+    min-height: 60px;
+    border: 1px solid #bbdac1;
+    border-radius: 4px;
+    padding: 4px;
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-left: 40%;
+    font-size: 18px;
+}
+
+/* ------- Chat block ------- */
+
+.chat {
+    margin-top: 150px;
+}
+
+.chat__container {
+    /*align-items: center;*/
+    padding: 2px;
+    justify-content: center;
+    height: 100%;
+}
+
+#messageText {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 12px;
+}

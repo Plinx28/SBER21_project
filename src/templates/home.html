@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="filter">
+    <div class="container filter__container">
+        <div class="filter__control">
+            <p>Здесь будет что-то, наверное, располагаться</p>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container content__container">
+        {% if statistics %}
+            {% for row in statistics %}
+            <div class="card">
+                <ul>
+                    <li>{{ operation.date }}</li>
+                    <li>{{ operation.quantity }}</li>
+                </ul>
+            </div>
+            {% endfor %}
+        {% else %}
+            <h2>There is no info</h2>
+        {% endif %}
+    </div>
+</section>
+{% endblock content %}
